@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +12,40 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>MVS Segurança</title>
+    <title>MVS Segurança Eletrônica</title>
+
 </head>
 
 <body>
 
+    <!-- VIDEO FUNDO -->
+
     <div class="caixa-video">
 
-        <video src="video.mp4" autoplay muted loop id="video-fundo"></video>
+        <video src="video.mp4"
+            autoplay
+            muted
+            loop
+            id="video-fundo">
+        </video>
 
         <div class="mascara"></div>
 
     </div>
 
-    <div class="Mascara-formulario" onclick="esconderForm()"></div>
+    <!-- MÁSCARA FORM -->
+
+    <div class="Mascara-formulario"
+        onclick="esconderForm()">
+    </div>
 
     <!-- HEADER -->
 
-    <div class="header">
+    <header class="header">
 
-        <img src="logo-header.png" class="logo-header">
+        <img src="logo-header.png"
+            class="logo-header"
+            alt="Logo MVS">
 
         <div class="links-header">
 
@@ -52,16 +67,16 @@
 
         </div>
 
-    </div>
+    </header>
 
-    <!-- CONTEÚDO -->
+    <!-- CONTEÚDO PRINCIPAL -->
 
-    <div class="caixa-mae">
+    <section class="caixa-mae">
 
         <div class="caixa-principal">
 
             <img src="logo.png"
-                alt="logo MVS"
+                alt="Logo MVS"
                 class="logo-mario">
 
             <p class="texto">
@@ -78,6 +93,10 @@
 
             </p>
 
+            <button onclick="mostraForm()">
+                Solicitar orçamento
+            </button>
+
         </div>
 
         <div class="caixa-imagem">
@@ -88,18 +107,101 @@
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- WHATS -->
+    <!-- SERVIÇOS -->
+
+    <section class="servicos">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="cards-servicos">
+
+            <div class="card">
+
+                <i class="fa-solid fa-camera"></i>
+
+                <h3>CFTV</h3>
+
+                <p>
+                    Instalação de câmeras de segurança com acesso remoto e gravação 24h.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <h3>Alarmes</h3>
+
+                <p>
+                    Sistemas de alarme modernos para residências, empresas e condomínios.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-building-shield"></i>
+
+                <h3>Portaria Remota</h3>
+
+                <p>
+                    Controle inteligente de entrada e saída com mais segurança.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-fingerprint"></i>
+
+                <h3>Controle de Acesso</h3>
+
+                <p>
+                    Biometria, tags e soluções completas para controle de acesso.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FORMULÁRIO -->
+
+    <form 
+        action="https://formsubmit.co/lognatura@gmail.com" 
+        method="POST"
+        class="Formulario-fale-conosco">
+
+        <input placeholder="Seu nome"
+            type="text">
+
+        <input placeholder="Seu telefone"
+            type="tel">
+
+        <textarea placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+    <!-- WHATSAPP -->
 
     <a href="https://w.app/ofgazq"
         class="link-whatssap"
         target="_blank">
 
         <img src="whatsapp.png"
-            alt="link para whatsapp">
+            alt="WhatsApp">
 
     </a>
+
+    <!-- SCRIPT -->
 
     <script src="scripts.js"></script>
 
