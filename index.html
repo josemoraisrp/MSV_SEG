@@ -3,48 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Mario bros</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>MVS Segurança</title>
 </head>
 
 <body>
-    <div class="Mascara-formulario" onclick="esconderForm()"></div>
-    <div class="header">
-        <img src="logo-header.png">
-        <a href="https://www.facebook.com/grupomvsterceirizacao" target="_blank">Facebook </a>
-        <a href="https://www.instagram.com/grupomvsterceirizacao/" target="_blank">Instagram </a>
+
+    <div class="caixa-video">
+
+        <video src="video.mp4" autoplay muted loop></video>
+
+        <div class="mascara"></div>
+
     </div>
+
+    <div class="Mascara-formulario" onclick="esconderForm()"></div>
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <img src="logo-header.png" class="logo-header">
+
+        <div class="links-header">
+
+            <a href="https://www.facebook.com/grupomvsterceirizacao"
+                target="_blank">
+
+                <i class="fa-brands fa-facebook"></i>
+                Facebook
+
+            </a>
+
+            <a href="https://www.instagram.com/grupomvsterceirizacao/"
+                target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- CONTEÚDO -->
+
     <div class="caixa-mae">
+
         <div class="caixa-principal">
 
-            <img src="logo.png" alt="logo do mario bros" class="logo-mario">
-            
-            <p class="texto"> Segurança eletrônica profissional para empresas e condomínios.
+            <img src="logo.png"
+                alt="logo MVS"
+                class="logo-mario">
 
-                             Instalação de câmeras, alarmes, monitoramento 24h e soluções completas em CFTV.
+            <p class="texto">
 
-                             Conte com a MVS para proteger o que realmente importa. </p><br><br><br>
+                Segurança eletrônica profissional para empresas e condomínios.
 
-            <button onclick="mostraForm()">Entre em Contato</button>
+                <br><br>
+
+                Instalação de câmeras, alarmes, monitoramento 24h e soluções completas em CFTV.
+
+                <br><br>
+
+                Conte com a MVS para proteger o que realmente importa.
+
+            </p>
 
         </div>
 
-        <div>
-            <img src="mario.png" alt="Logo mario e luigi" class="logo-mario-luigi">
+        <div class="caixa-imagem">
+
+            <img src="mario.png"
+                alt="Equipe técnica"
+                class="logo-mario-luigi">
+
         </div>
+
     </div>
-    <div class="caixa-video">
-        <video src="video.mp4" autoplay muted loop></video>
-        <div class="mascara"></div>
-    </div>
-    <a href="https://w.app/ofgazq" class="link-whatssap">
-        <img src="whatsapp.png" alt="link para whatsapp">
+
+    <!-- WHATS -->
+
+    <a href="https://w.app/ofgazq"
+        class="link-whatssap"
+        target="_blank">
+
+        <img src="whatsapp.png"
+            alt="link para whatsapp">
 
     </a>
-   
+
+    <script src="scripts.js"></script>
+
 </body>
-<script src="scripts.js"></script>
 
 </html>
